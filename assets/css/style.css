@@ -1,0 +1,217 @@
+@font-face {
+  font-family:'pixel';
+  src: url('../fonts/LITTLEPIXEL.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.text {
+  font-family: 'pixel';
+  color: white;
+  font-size: 50px;
+}
+.title-text {
+  font-family: 'pixel';
+  color: white;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+#game-logo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.bg {
+  width: 100%;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+}
+
+#mountain {
+  width: 100%;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+}
+
+/* Flexbox */
+#main-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.child {
+  margin-top: 70px;
+  margin-bottom: 70px;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#milks, #gamestuff {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#youtube, #credits, #mountain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#carousel-stuff {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.center-text {
+  display: flex;
+  align-items: center;
+}
+
+#links {
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+.title-text, .text:hover {
+  cursor: default;
+}
+
+#button-next, #button-previous:hover {
+  cursor: pointer;
+}
+
+.itch {
+  width: 75px;
+  border-radius: 5px;
+}
+
+.itch:hover {
+  background: #262b44;
+}
+
+.milkIMG {
+  position: relative;
+}
+
+.milkContainer {
+  position: relative;
+}
+
+.milkBG {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50%;
+  margin-top: 50%;
+  height: 10px;
+  width: 10px;
+  border-radius: 0%;
+  box-shadow:
+    0 0 30px 15px #ffffff,
+    0 0 50px 30px #c0cbdc,
+    0 0 70px 45px #8b9bb4;
+}
+
+.milkBG-B {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50%;
+  margin-top: 50%;
+  height: 10px;
+  width: 10px;
+  border-radius: 0%;
+  box-shadow:
+    0 0 30px 15px #fee761,
+    0 0 50px 30px #feae34,
+    0 0 70px 45px #f77622; 
+}
+
+.milkBG-C {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50%;
+  margin-top: 50%;
+  height: 10px;
+  width: 10px;
+  border-radius: 0%;
+  box-shadow:
+    0 0 30px 15px #b86f50, 
+    0 0 50px 30px #733e39, 
+    0 0 70px 45px #3e2731; 
+}
+
+.milkBG-S {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50%;
+  margin-top: 50%;
+  height: 10px;
+  width: 10px;
+  border-radius: 0%;
+  box-shadow:
+    0 0 30px 15px #f6757a,  /* inner white */
+    0 0 50px 30px #e43b44, /* middle magenta */
+    0 0 70px 45px #a22633; /* outer cyan */
+}
+
+
+
+#button-previous {
+  margin-right: 10px;
+}
+
+#button-next {
+  margin-left: 10px;
+}
+
+/* Overall carousel dimensions */
+#carousel,
+.carousel-image {
+  width: 625px;
+  height: 350px;
+}
+
+/* Carousel frame setup */
+#carousel {
+  position: relative;
+  border: 3px solid white;
+  overflow: hidden;
+  /* Part 2.1: Hide stuff that overflows the box */
+}
+
+/* Images */
+#carousel-image-row {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 0px;
+  /* Part 2.2: Add transition */
+  transition: 0.5s left;
+}
+
+.carousel-image img {
+  height: 100%;
+  width: auto;
+}
+/* Controls */
+.hidden {
+  visibility: hidden;
+}
